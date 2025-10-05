@@ -40,8 +40,12 @@ and then:
 
 
 ---How to Run and Test--- 
-
+make sure you are on the right directory in the terminal
 You need at least two separate terminal windows: one for the server and one for each client.
+and activate the virtual enviorment by
+```
+.\venv\Scripts\activate
+```
 
 1. Start the Server
 In your first terminal, run the `server.py` script.
