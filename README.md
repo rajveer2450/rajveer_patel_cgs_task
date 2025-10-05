@@ -73,29 +73,29 @@ your nickname: Bob
 3. Testing Methods
 You can now test the various features:
 
-Broadcast Messaging:
+--Broadcast Messaging:
 Action: In Alice's terminal, type Hello everyone! and press Enter.
 Expected Result: The message [HH:MM:SS] Alice: Hello everyone! should appear in both Alice's and Bob's terminals.
 
-Direct Messaging (DM):
+--Direct Messaging (DM):
 Action: In Alice's terminal, type /dm Bob Just for you and press Enter.
 Expected Result: The message DM [HH:MM:SS] Just for you should appear only in Bob's terminal.
 
-List Users:
+--List Users:
 Action: In any client's terminal, type /list.
 Expected Result: That client will receive a list of connected users: Alice and Bob.
 
-Create and Message a Room:
+--Create and Message a Room:
 Action (Create): In Alice's terminal, type /createroom projectX @Bob.
 Expected Result: Both Alice and Bob will receive a system notification that they have been added to the room projectX.
 
 Action (Message): In Bob's terminal, type @projectX Let's start the project.
 Expected Result: The message [HH:MM:SS] projectX Let's start the project will appear in both Alice's and Bob's terminals, but not in any other client's terminal.
 
-Tagging a User:
+--Tagging a User:
 Action: In Bob's terminal, type Hey $Alice check this out.
 Expected Result: Alice will receive a special notification: you are tagged in message by Bob. The original message from Bob will still be broadcast to everyone.
 
-Quitting the Chat:
+--Quitting the Chat:
 Action: In Bob's terminal, type /quit.
 Expected Result: Bob's client script will terminate. Alice's terminal will display a message like [HH:MM:SS] Bob left the chat. The server terminal will log that Bob has left.
